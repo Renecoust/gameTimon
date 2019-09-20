@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang='ru'>
+<head>
+    <meta charset='utf-8'>
+    <title>Игра</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <audio src="assets/sound/background.mp3" loop="" id="aud"></audio>
+    <div id="pause">Пауза</div>
+    <div id="death">
+            <h1>Вы умерли</h1>
+            <button class="b_restart" onclick="restart();"> Заново</button>
+    </div>
+    <div id="finish">
+        <h1>Вы Выиграли</h1>
+        <button class="b_restart" onclick="restart();"> Заново</button>
+    </div>
+    <div id="start_s">
+        <h1>Тимон и Пумба</h1>
+        <input type="text" placeholder="Ваш никнейм" id="nickname">
+        <div id="players">
+            <div id="player1" class="playerb1"></div>
+            <div id="player2" class="playerb1"></div>
+        </div>
+        <div class="inst" id="instt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium exercitationem quis illum nulla vel adipisci quibusdam, eos commodi dolores? Esse, amet beatae? Dolorum sint recusandae soluta molestias hic, vitae laborum.</div>
+        <button id="intsr" onclick="intsru();"> Инструкция</button>
+        <button id="b_start" disabled> Начать</button>
+    </div>
+    <div id="video_s">
+            <img src="" alt="1" id="video_c">
+            <p class="img_t">Нажмите пробел чтобы продолжить</p>
+    </div>
+</body>
+<script src="assets/javascript/game.js" defer></script>
+</html>

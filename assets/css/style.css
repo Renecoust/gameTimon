@@ -1,0 +1,165 @@
+* {
+    margin: 0;
+    padding: 0;
+    color: #FFCF87;
+}
+body {
+    overflow: hidden;
+}
+canvas {
+    display: block;
+}
+#pause {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.7);
+    text-align: center;
+    line-height: 100vh;
+    font-size: 3em;
+    display: none;
+}
+#death {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.7);
+    text-align: center;
+    font-size: 3em;
+    display: none;
+}
+#finish {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    background: url(../images/timon-pumbaa-wall.jpg)no-repeat center center / cover;
+    text-align: center;
+    font-size: 3em;
+    display: none;
+}
+#start_s {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    background: url(../images/timon-pumbaa-wall.jpg)no-repeat center center / cover;
+    text-align: center;
+    font-size: 3em;
+    display: block;
+}
+#start_s input {
+    margin-top: 1%;
+    width: 500px;
+    font-size: 1.2em;
+    height: 70px;
+    outline: none;
+    border : none;
+    color: #3d3d3d;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 20px;
+    padding: 10px;
+}
+#start_s button {
+    width: auto;
+    font-size: 0.5em;
+    height: 70px;
+    outline: none;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 20px;
+    padding: 15px;
+    display: block;
+    margin: 0 auto;
+    margin-top: 50px;
+    cursor: pointer;
+    color: #000;
+}
+.b_restart {
+    width: 120px;
+    font-size: 0.5em;
+    height: 70px;
+    outline: none;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 20px;
+    padding: 15px;
+    display: block;
+    margin: 0 auto;
+    margin-top: 50px;
+    cursor: pointer;
+    color: #000;
+}
+#aud {
+    display: none;
+}
+img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+}
+.img_t {
+    position: absolute;
+    left: 50%;
+    top: 95%;
+    transform: translate(-50%,-50%);
+    color: #3C3CFF;
+    font-size: 2em;
+}
+#video_s {
+    display: none;
+}
+#players {
+    width: 35%;
+    height: 350px;
+    display: flex;
+    margin: 10px auto;
+}
+#player1 {
+    margin: 5%;
+    width: 40%;
+    height: 80%;
+    background: url(/assets/images/Pumba-img.png)no-repeat center top / cover;
+    cursor: pointer;
+    transition: .5s;
+}
+#player2 {
+    margin: 5%;
+    width: 40%;
+    height: 80%;
+    background: url(/assets/images/Timon-img.png)no-repeat center top / cover;
+    cursor: pointer;
+    transition: .5s;
+}
+#player1:hover {
+    border: 1px solid #FF3232;
+}
+#player2:hover {
+    border: 1px solid #FF3232;
+}
+.playerb1 {
+    border: 1px solid #EBFF55;
+}
+.playerb2 {
+    border: 1px solid green;
+}
+.inst {
+    font-size: 0.5em;
+    width: 50%;
+    height: 100px;
+    padding: 50px;
+    background: #4741FF;
+    border-radius: 10px;
+    display: inline-block;
+    position: absolute;
+    left: 50%;
+    top: -30%;
+    transform: translate(-50%,-50%);
+    transition: 2s;
+}
